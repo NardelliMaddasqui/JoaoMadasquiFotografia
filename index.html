@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>João Madasqui Fotografia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">João Madasqui Fotografia</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Início</a></li>
+      <li><a href="gallery.html">Galeria</a></li>
+      <li><a href="services.html">Serviços</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container">
+
+    <!-- HERO: slideshow de fotos com título sobreposto -->
+    <section class="hero-section">
+      <div class="hero-slideshow" id="heroSlideshow">
+
+        <!-- Adicione ou remova slides conforme desejar -->
+        <!-- Substitua "fotos/foto1.jpg" pelo caminho real da sua imagem -->
+    
+        <div class="hero-slide">
+          <img src="Fotos/aguaepalmeira.jpg" alt="Foto destaque 1" />
+        </div>
+        <div class="hero-slide">
+          <img src="Fotos/flor.jpg" alt="Foto destaque 2" />
+        </div>
+        <div class="hero-slide">
+          <img src="Fotos/IMG_9999.jpg" alt="Foto destaque 3" />
+        </div>
+         <div class="hero-slide">
+          <img src="Fotos/arborizado.jpg" alt="Foto destaque 4" />
+        </div>
+         <div class="hero-slide">
+          <img src="Fotos/soja.jpg" alt="Foto destaque 5" />
+        </div>
+         <div class="hero-slide">
+          <img src="Fotos/sensacoes2.jpg" alt="Foto destaque 6" />
+        </div>
+
+        <!-- Texto sobreposto na foto -->
+        <div class="hero-overlay">
+          <h1 class="hero-title">João Victor Nardelli Madasqui</h1>
+          <!-- Edite o texto abaixo conforme desejar -->
+          <p class="hero-subtitle">Fazendo dos seus momentos memórias inesquecíveis.</p>
+        </div>
+
+        <button class="slide-btn prev" onclick="changeHero(-1)">&#10094;</button>
+        <button class="slide-btn next" onclick="changeHero(1)">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- ATALHOS: 3 cards que levam para as páginas principais -->
+    <section class="shortcuts-section">
+      <h2 class="section-title">Explore</h2>
+
+      <div class="shortcuts-grid">
+
+        <!-- Atalho 1 — Galeria -->
+        <a href="gallery.html" class="shortcut-card">
+          <img src="Fotos/sensacoes2.jpg" alt="Galeria" />
+          <div class="shortcut-label">Galeria</div>
+        </a>
+
+        <!-- Atalho 2 — Serviços -->
+        <a href="services.html" class="shortcut-card">
+          <img src="Fotos/aguaepalmeira.jpg" alt="Serviços" />
+          <div class="shortcut-label">Serviços</div>
+        </a>
+        <!-- Atalho 3 — Sobre
+        <a href="about.html" class="shortcut-card">
+          <img src="Fotos/IMG_1884.jpg" alt="Sobre" />
+          <div class="shortcut-label">Sobre</div>
+        </a>    -->
+
+        <!-- Atalho 4 — Atendimento 
+        <a href="atendimento.html" class="shortcut-card">
+          <img src="Fotos/IMG_1884.jpg" alt="Atendimento" />
+          <div class="shortcut-label">Agende um horário</div>
+        </a>  -->
+
+
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Entre em contato:</p>
+    <p>
+      <span>📞 (14) 99181-3821</span>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <span>✉️ jvnmadasqui@gmail.com</span>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

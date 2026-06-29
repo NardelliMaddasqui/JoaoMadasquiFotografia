@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>João Madasqui Fotografia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">João Madasqui Fotografia</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="gallery.html" class="active">Galeria</a></li>        
+      <li><a href="services.html">Serviços</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container">
+
+    <!-- Cabeçalho da galeria -->
+    <section class="gallery-hero">
+      <h1 class="section-title">Galeria</h1>
+    </section>
+
+    <!-- ABAS + ÁLBUNS -->
+    <section class="album-tabs-section">
+
+      <!-- Botões de aba — adicione ou remova conforme seus trabalhos -->
+      <div class="album-tabs" id="albumTabs">
+        <button type="button" class="album-tab active" data-album="album1">Fotos em emoções abstratas...</button>
+        <button type="button" class="album-tab" data-album="album2">Cores: Além do Vibrate</button>
+       <!-- <button type="button" class="album-tab" data-album="album3">Trabalho 3</button> -->
+       <!--<button type="button" class="album-tab" data-album="album4">Trabalho 4</button> -->
+        <!-- Copie a linha acima para adicionar mais trabalhos -->
+      </div>
+
+      <!-- =============================================
+           ÁLBUM 1
+           Para adicionar fotos: copie um .gallery-item
+           e troque o src pela sua imagem.
+      ============================================= -->
+      <div class="album-panel active" id="album1">
+        <h2>E em cores nulas.</h2>
+        <p class="album-desc">"Normalmente, as fotos em branco e preto têm a intenção de remover boa parte das distrações da cena, levando o fruidor a relevar seu olhar à emoção e ao que está retratado,
+assim trazendo certa sensação de impacto, que, junto às cores nulas, fazem dessas fotos as que mais demonstram a emoção e a profundidade de cada pessoa e cenário,
+assim fazendo com que o branco e preto traga este alto contraste".</p>
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="Fotos/IMG_1747c.jpg" alt="" /></div>
+          <div class="gallery-item"><img src="Fotos/IMG_1450c.jpg" alt="" /></div>
+          <div class="gallery-item"><img src="Fotos/IMG_3295c.jpg" alt="" /></div>
+          <div class="gallery-item"><img src="Fotos/IMG_3647c.jpg" alt="" /></div>
+          <div class="gallery-item"><img src="Fotos/IMG_4969c.jpg" alt="" /></div>
+          <div class="gallery-item"><img src="Fotos/IMG_3853c.jpg" alt="" /></div>
+        </div>
+      </div>
+
+      <!-- =============================================
+           ÁLBUM 2
+      ============================================= -->
+      <div class="album-panel" id="album2">
+        <h2></h2>
+        <p class="album-desc">A cor de uma foto define quase que totalmente o tipo de expressão afim de ser mostrada,
+e é ela que define a minha identidade e visão artística para cada momento.
+Dessa forma, posso definir isto como um algo que revela mais sobre a cena em questão, que permite ao espectador interpretar a foto de mais olhares.</p>
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="Fotos/IMG_3899c.jpg" alt="" /></div>
+          <div class="gallery-item"><img src="Fotos/IMG_8888c.jpg" alt="" /></div>
+          <div class="gallery-item"><img src="Fotos/IMG_3755c.jpg" alt="" /></div>
+          <div class="gallery-item"><img src="Fotos/IMG_6090c.jpg" alt="" /></div>
+          <div class="gallery-item"><img src="Fotos/IMG_6187c.jpg" alt="" /></div>
+          <div class="gallery-item"><img src="Fotos/IMG_8110c.jpg" alt="" /></div>
+        </div>
+      </div>
+
+      <!-- =============================================
+           ÁLBUM 3
+      ============================================= -->
+      <div class="album-panel" id="album3">
+        <h2>Trabalho 3</h2>
+        <p class="album-desc">Descrição opcional do trabalho.</p>
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="fotos/album3/foto1.jpg" alt="" /></div>
+          <div class="gallery-item"><img src="fotos/album3/foto2.jpg" alt="" /></div>
+          <div class="gallery-item"><img src="fotos/album3/foto3.jpg" alt="" /></div>
+          <div class="gallery-item"><img src="fotos/album3/foto4.jpg" alt="" /></div>
+          <div class="gallery-item"><img src="fotos/album3/foto5.jpg" alt="" /></div>
+          <div class="gallery-item"><img src="fotos/album3/foto6.jpg" alt="" /></div>
+        </div>
+      </div>
+
+      <!-- =============================================
+           ÁLBUM 4
+      ============================================= -->
+      <div class="album-panel" id="album4">
+        <h2>Trabalho 4</h2>
+        <p class="album-desc">Descrição opcional do trabalho.</p>
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="fotos/album4/foto1.jpg" alt="" /></div>
+          <div class="gallery-item"><img src="fotos/album4/foto2.jpg" alt="" /></div>
+          <div class="gallery-item"><img src="fotos/album4/foto3.jpg" alt="" /></div>
+          <div class="gallery-item"><img src="fotos/album4/foto4.jpg" alt="" /></div>
+          <div class="gallery-item"><img src="fotos/album4/foto5.jpg" alt="" /></div>
+          <div class="gallery-item"><img src="fotos/album4/foto6.jpg" alt="" /></div>
+        </div>
+      </div>
+
+      <!--
+        COMO ADICIONAR UM NOVO ÁLBUM:
+        1. Copie o bloco <div class="album-panel" id="albumN"> acima
+        2. Troque o id para "album5", "album6", etc.
+        3. Adicione um botão na lista .album-tabs:
+           <button type="button" class="album-tab" data-album="album5">Trabalho 5</button>
+        4. Coloque as fotos em fotos/album5/
+      -->
+
+    </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Entre em contato:</p>
+    <p>
+      <span>📞 (14) 1499181-3821</span>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <span>✉️ jvnmadasqui@gmail.com</span>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

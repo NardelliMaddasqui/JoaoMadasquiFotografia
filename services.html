@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>João Madasqui Fotografia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">João Madasqui Fotografia</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="gallery.html">Galeria</a></li>
+      <li><a href="services.html" class="active">Serviços</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container">
+    <section class="services-section">
+      <h1 class="section-title">Meus Serviços</h1>
+
+      <div class="service-carousel">
+
+        <!-- SERVIÇO 1 — edite título, texto e imagem -->
+        <div class="service-slide active">
+          <img src="Fotos/ensaioc.jpg" alt="Serviço 1" class="service-img" />
+          <div class="service-info">
+            <h2>Ensaios Fotográficos</h2>
+            <p>
+              Sessões fotográficas individuais, de casal ou família em natureza. 
+            </p>
+          </div>
+        </div>
+
+        <!-- SERVIÇO 2 -->
+        <div class="service-slide">
+          <img src="Fotos/corpc.jpg" alt="Serviço 2" class="service-img" />
+          <div class="service-info">
+            <h2>Fotografia Corporativa</h2>
+            <p>
+              Sessões especializadas com foco em fortalecer a identidade visual para a sua marca.
+            </p>
+          </div>
+        </div>
+
+        <!-- SERVIÇO 3 -->
+        <div class="service-slide">
+          <img src="Fotos/aniversarioc.jpg" alt="Serviço 3" class="service-img" />
+          <div class="service-info">
+            <h2>Aniversários</h2>
+            <p>
+              Cobertura fotográfica para o seu aniversário.
+            </p>
+          </div>
+        </div>
+
+        <!-- SERVIÇO 4 -->
+        <div class="service-slide">
+          <img src="Fotos/IMG_8110c.jpg" alt="Serviço 4" class="service-img" />
+          <div class="service-info">
+            <h2>Newborn & Gestante</h2>
+            <p>
+              Ensaios delicados para registrar a chegada do bebê e a beleza
+              da gestação com toda a ternura que esse momento merece.
+            </p>
+          </div>
+        </div>
+
+        <!-- SERVIÇO 5 -->
+        <div class="service-slide">
+          <img src="Fotos/eventoc.jpg" alt="Serviço 5" class="service-img" />
+          <div class="service-info">
+            <h2>Fotografia de Eventos</h2>
+            <p>
+              Cobertura fotográfica para o seu evento.
+            </p>
+          </div>
+        </div>
+
+        <button class="slide-btn prev" onclick="changeService(-1)">&#10094;</button>
+        <button class="slide-btn next" onclick="changeService(1)">&#10095;</button>
+      </div>
+
+      <div class="slide-dots" id="serviceDots"></div>
+
+      <p>Vale ressaltar que cada trabalho é único, então tenho uma proposta totalmente excluiva, com estilos para fotos e vídeos bem diversos. Tudo é personalizado para um melhor atendimento para cada cliente.</p>
+
+
+    </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Entre em contato:</p>
+    <p>
+      <span>📞 (14) 99181-3821</span>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <span>✉️ seuemail@gmail.com</span>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
